@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lady flavor</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
+
+
+    <style>
+        .container {
+            width: 1440px;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        @media (min-width:1440px) {
+            .container {
+                max-width: 1440px;
+            }
+        }
+
+        nav {
+
+            height: 80px;
+            width: 100%;
+        }
+
+
+
+        .nav-center>a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding-right: 50px;
+
+        }
+
+        .nav-center>a:hover {
+            border-bottom: 1px solid gray;
+        }
+
+        .nav-left {
+            width: 200px;
+
+        }
+
+        .nav-left>a>img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav-right>a>i {
+            color: gray;
+            margin: 10px;
+            font-size: 1.5rem;
+        }
+
+        .bars {
+            display: none;
+        }
+
+        @media screen and (max-width:1200px) {
+            .nav-center {
+                display: none;
+            }
+
+            .bars {
+                display: inline-block;
+                font-size: 2rem;
+
+            }
+
+            .bars>a>i {
+                color: gray;
+            }
+
+            .fa-search {
+                display: none;
+            }
+
+
+
+        }
+
+        .row {
+            display: flex;
+            height: 100%;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+
+        .item1 {
+            width: 100%;
+        }
+
+        .item1>img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .img1430 {
+            width: 1430px;
+        }
+
+        .img1430>img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .img100 {
+            width: 300px;
+        }
+
+        .img100>a>img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .imgmaintitle>img,
+        .product>img,
+        .response>img,
+        .catlover>a>img,
+        .moreprodutcs>img,
+        .moremore>a>img {
+            width: 100%;
+            height: auto;
+        }
+
+        .othercommet {
+            height: auto;
+            width: 264px;
+            margin: 0 auto;
+        }
+
+        .othercommet>img {
+            width: 70%;
+            margin-left: 40px;
+            padding-top: 15px;
+        }
+
+        .othercommet>h5 {
+            text-align: center;
+            color: #daa8a8;
+            margin: 12px 0;
+            font-size: 20px;
+
+        }
+
+        .othercommet>p {
+            color: grey;
+            line-height: 26px;
+            font-size: 16px;
+        }
+
+        .bgcgrey {
+            background-color: #f2f2f2;
+        }
+
+        .hotitem {
+            width: 270px;
+            margin: 0 auto;
+        }
+
+
+
+        .hotitem>a>img {
+            width: 100%;
+            height: auto;
+
+        }
+
+
+        .productsticker {
+            position: absolute;
+            top: 10px;
+            margin: 8px;
+            z-index: 10000;
+        }
+
+        .productsticker>img {
+            width: 100px;
+        }
+
+        .hotitem>a {
+            text-decoration: none;
+        }
+
+        .hotitem>a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .productname {
+            font-family: roman, daty5, sans-serif;
+            color: #4d4d4d;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        .productDescription {
+            color: #979797;
+            border-bottom: 1px solid grey;
+            padding-bottom: 7px;
+            margin-bottom: 7px;
+            line-height: 1.2;
+        }
+
+        .productPrice {
+            color: #565656;
+            text-decoration: line-through;
+        }
+
+        .productSpPrice {
+            color: #e81c24;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+        }
+
+        .foot-text>a {
+            color: #4d4d4d;
+            font-size: 10pt;
+            font-weight: 150;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav justify-content-around align-items-center mt-3">
+                <div class="bars">
+
+                    <a href="">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
+                <div class="nav-left ">
+                    <a href="#">
+                        <img src="./img/x140.webp" alt="">
+                    </a>
+                </div>
+                <div class="nav-center ">
+                    <a href="#" class="mr-2">
+                        超值組合
+                    </a>
+                    <a href="#" class="mr-2">
+                        鮮食主食罐
+                    </a>
+                    <a href="#" class="mr-2">
+                        鮮食必需品
+                    </a>
+                    <a href="#" class="mr-2">
+                        鮮食貓零食
+                    </a>
+                    <a href="#" class="mr-2">
+                        所有商品
+                    </a>
+                    <a href="#" class="mr-2">
+                        常見問題
+                    </a>
+                    <a href="" class="mr-2">
+                        合作店家
+                    </a>
+                </div>
+                <div class="nav-right ">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-male"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="slick">
+                <div class="item1">
+                    <img src="./img/4yrzJGa.jpg" alt="...">
+                </div>
+                <div class="item1">
+                    <img src="./img/HXv5HYW.jpg" alt="...">
+                </div>
+                <div class="item1">
+                    <img src="./img/PW7NIyn.jpg" alt="...">
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="img100 col-xl col-sm-6">
+                    <a href="#">
+                        <img src="./img/MXjtL1e.png" alt="">
+                    </a>
+                </div>
+
+                <div class="img100 col-xl col-sm-6">
+                    <a href="#">
+                        <img src="./img/O3FwG38.png" alt="">
+                    </a>
+                </div>
+                <div class="img100 col-xl col-sm-6">
+                    <a href="#">
+                        <img src="./img/gQqOviT.png" alt="">
+                    </a>
+                </div>
+                <div class="img100 col-xl col-sm-6">
+                    <a href="#">
+                        <img src="./img/jj2xWz8.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="imgmaintitle">
+                    <img src="./img/nHLVNce.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="product">
+                    <img src="./img/P8Nk2K1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="slick">
+                <div class="item1">
+                    <img src="./img/Pe7biFG.jpg" alt="...">
+                </div>
+                <div class="item1">
+                    <img src="./img/DRqtr11.jpg" alt="...">
+                </div>
+                <div class="item1">
+                    <img src="./img/15h5FVc.jpg" alt="...">
+                </div>
+                <div class="item1">
+                    <img src="./img/9iRG3MA.jpg" alt="...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="response">
+                    <img src="./img/majYTN3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row mt-5 bgcgrey">
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/3AL8gh2.png" alt="">
+                    <h5>王曉知</h5>
+                    <p>貓漢堡真的能彌補我們因為上班忙錄，而無法自製鮮食給貓孩兒的遺憾，這點讓我覺得非常棒呢！</p>
+                </div>
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/tOvkvFZ.png" alt="">
+                    <h5>胡斯媚</h5>
+                    <p>我們家老小姐因年紀大呼吸道變不好，聞不到食物味道都不怎麼吃飯，收到鮮食調味料就趕快加進去罐罐裡，很快就吃光了！一定會再回購！</p>
+                </div>
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/myhMSju.png" alt="">
+                    <h5>林芷妤</h5>
+                    <p>看起來就好好吃，我們家的貓也好喜歡喔！謝謝好味小姐出這麼棒的商品～～～</p>
+                </div>
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/aWImZoa.png" alt="">
+                    <h5>陳嘉甄</h5>
+                    <p>我只要開冰箱，我家的就一直喊「快，快，快」快把媽媽吃掉了！到底有多好吃！讓我家這個挑嘴小姐愛成這樣！購買第三次了！真的很棒！</p>
+                </div>
+            </div>
+
+            <div class="row mt-5 bgcgrey">
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/aQYfukH.png" alt="">
+                    <h5>Hong Zhen Huang</h5>
+                    <p>試吃三天啦！超棒的！我兒子吃飯通常都自己分好幾餐吃好久，漢堡排一放下去直接一顆不見！太厲害啦啦啦啦啦啦！！！</p>
+                </div>
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/5KjQHi1.png" alt="">
+                    <h5>Chen Angelina Ying Lan</h5>
+                    <p>十四歲貓公主因貧血需要補鐵，用盡方法騙就是不吃雞肝，沒想到吃貓補丁鐵質配方，吃完的當下已經興奮到可以一到五樓跑三圈吧！</p>
+                </div>
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/4Cmy6vW.png" alt="">
+                    <h5>Alicia Tsai</h5>
+                    <p>好味小姐在貓咪飲食上設計與分享都很用心，營養與外觀設計兼具，看了賞心悅目！不定時貓咪小教室也讓人學到很多。商品品質也都超棒！</p>
+                </div>
+                <div class="othercommet col-sm-6 col-xl-3">
+                    <img src="./img/jMw7GOZ.png" alt="">
+                    <h5>周禹宸</h5>
+                    <p>好味小姐散發滿滿愛心和耐心！認真看了好味商店介紹，毫不猶豫買了鮮食化毛膏（排隊都甘願呀）真的是一個很棒、很值得推薦的團隊呀！</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="catlover">
+                    <a href="">
+                        <img src="./img/K2IyBjV.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="moreprodutcs">
+                    <img src="./img/BpwgfqR.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row justify-content-between ">
+                <div class="hotitem col-sm-6 col-xl-3 ">
+                    <a href="">
+                        <img src="./img/I7LpE0B.jpg" alt="">
+                        <!-- <span class="productsticker">
+                            <img src="./img/sXgEXoD.png" alt="">
+                        </span> -->
+                        <h4 class="productname">1+1貓鮮食主食罐24件</h4>
+                        <p class="productDescription">不打折的完整營養攝取</p>
+                        <p class="productPrice">NT$ 2,616</p>
+                        <p class="productSpPrice">現省 NT$ 767</p>
+                        <p class="productSpPrice">NT$ 1,849</p>
+                    </a>
+                </div>
+                <div class="hotitem col-sm-6 col-xl-3 ">
+                    <a href="">
+                        <img src="./img/Sv4w6DK.jpg" alt="">
+                        <!-- <span class="productsticker">
+                            <img src="./img/WhNKeXW.png" alt="">
+                        </span> -->
+                        <h4 class="productname">好貓照書養組合</h4>
+                        <p class="productDescription">做貓鮮食料理超簡單</p>
+                        <p class="productPrice">NT$ 1,055</p>
+                        <p class="productSpPrice">現省 NT$ 286</p>
+                        <p class="productSpPrice">NT$ 769</p>
+                    </a>
+                </div>
+                <div class="hotitem col-sm-6 col-xl-3 ">
+                    <a href="">
+                        <img src="./img/HOYNGXY.jpg" alt="">
+                        <!-- <span class="productsticker">
+                            <img src="./img/sXgEXoD.png" alt="">
+                        </span> -->
+                        <h4 class="productname">好好吃點心組合</h4>
+                        <p class="productDescription">一起來吃純天然貓零食</p>
+                        <p class="productPrice">NT$ 1695</p>
+                        <p class="productSpPrice">現省 NT$ 446</p>
+                        <p class="productSpPrice">NT$ 1249</p>
+                    </a>
+                </div>
+                <div class="hotitem col-sm-6 col-xl-3 ">
+                    <a href="">
+                        <img src="./img/bbGFnKG.jpg" alt="">
+                        <!-- <span class="productsticker">
+                            <img src="./img/sXgEXoD.png" alt="">
+                        </span> -->
+                        <h4 class="productname">好鮮食加料組合</h4>
+                        <p class="productDescription">鮮食好物 一次滿足</p>
+                        <p class="productPrice">NT$ 1,920</p>
+                        <p class="productSpPrice">現省 NT$ 471</p>
+                        <p class="productSpPrice">NT$ 1,449</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="moremore">
+                    <a href="#">
+                        <img src="./img/q5Nkw2t.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="cusfooter col-xl col-sm-12">
+                    <div class="foot-text">
+                        <a href="">
+                            好味小姐 LadyFlavor © 短捲麻股份有限公司 LadyFlavor Inc.
+                        </a>
+                    </div>
+                    <div class="foot-text">
+                        <a href="#">
+                            退換貨政策
+                        </a>
+                        <a href="#">
+                            常見Q&A
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cusfooter col-xl col-sm-12">
+                    <div class="foot-text">
+                        <a href="">客服專線：0903-995-120 ｜ 平日10 : 00 - 22 : 00</a>
+                    </div>
+                    <div class="foot-text">
+                        <a href="">Mail | ladyflavor.pet@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+
+        $('.slick').slick();
+    </script>
+</body>
+
+</html>
